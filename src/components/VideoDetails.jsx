@@ -51,7 +51,7 @@ const VideoDetails = () => {
   return (
     <div className="flex justify-center flex-row h-[calc(100%-56px)] bg-black">
         <div className="w-full max-w-[1280px] flex flex-col lg:flex-row">
-        <LeftNav />
+        
 
           <div className="flex flex-col lg:w[calc(100%-350px)] xl:w[calc(100%-400px)] px-4 py-3 lg:py-6 overflow-auto ">
             <div className="h-[200px] md:h-[400px] lg:h-[400px] xl:h-[550px] ml-[-16px] lg:ml-0 mr-[-16px] lg:mr-0">
@@ -109,7 +109,7 @@ const VideoDetails = () => {
             </div>
           </div>
           
-          <div className="flex flex-col py-6 px-4 overflow-y-auto lg:w-[350px] xl:w-[400px] ">
+          <div className="flex flex-col py-6 px-4 overflow-y-auto lg:w-[350px] xl:w-[400px] scrollbar-hide ">
             {relatedVideos?.contents?.map((item,index) => {
               if (item?.type !== "video") return false;
 
